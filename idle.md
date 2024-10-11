@@ -15,3 +15,6 @@ IDLEの画面
 - [Options]-[Configure IDLE]-[Shell/Ed] [Show line numbers in new windows]をONにします。  
 その後、[File]-[New File]を選ぶと、[エディタ]が立ち上がります。  
 エディタの左端に行番号(1)が表示されていることを確認してください。
+
+[戻る](./README.md) [次へ](script.md)
+
