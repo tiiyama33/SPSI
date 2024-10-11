@@ -127,3 +127,5 @@ print(type(r))</pre>
 </tr>
 </tbody>
 </table>
+
+[戻る](./README.md) [次へ](list.md)
