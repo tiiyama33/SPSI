@@ -12,6 +12,7 @@ pip install pygame
 
 と入力して pygame をインストールします。
 
+[戻る](.)
 
 ## 参考リンク
 <ul>
