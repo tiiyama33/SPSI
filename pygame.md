@@ -12,7 +12,8 @@ pip install pygame
 
 と入力して pygame をインストールします。
 
-[戻る](.)
+[戻る](./README.md) [次へ](idle.md)
+
 
 ## 参考リンク
 <ul>
