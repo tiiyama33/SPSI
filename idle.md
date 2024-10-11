@@ -10,5 +10,8 @@ Shellウィンドウは、対話モードに対応しています。
 IDLEの画面
 
 # IDLEの調整
-<p>[Options]-[Configure IDLE]-[Fonts]<br />表示フォントを設定します。文字の幅が一定のもの(PlemolJPなど)を使うと良いでしょう。(<a href="http://science.shinshu-u.ac.jp/~tiiyama/?page_id=196766">PlemolJPのインストール</a>)</p>
-<p>[Options]-[Configure IDLE]-[Shell/Ed]<br />[Show line numbers in new windows]をONにします。<br />その後、[File]-[New File]を選ぶと、[エディタ]が立ち上がります。<br />エディタの左端に行番号(1)が表示されていることを確認してください。</p>
+- [Options]-[Configure IDLE]-[Fonts]  
+表示フォントを設定します。文字の幅が一定のもの(PlemolJPなど)を使うと良いでしょう。[PlemolJPのインストール](tips.md)  
+- [Options]-[Configure IDLE]-[Shell/Ed] [Show line numbers in new windows]をONにします。  
+その後、[File]-[New File]を選ぶと、[エディタ]が立ち上がります。  
+エディタの左端に行番号(1)が表示されていることを確認してください。
