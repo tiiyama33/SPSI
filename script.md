@@ -22,3 +22,5 @@ print("Hello")
 print(3+5) #足し算
 print("Hello!") #文字列
 ```
+
+[戻る](./README.md) [次へ](operator.md)
