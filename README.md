@@ -19,3 +19,6 @@
 [授業の目的](aim.md)  
 [Pythonのインストール](install.md)  
 [pygameのインストール](pygame.md)  
+[IDLEの起動](idle.md)
+[スクリプトの作成](script.md)
+[Tips](tips.md)
