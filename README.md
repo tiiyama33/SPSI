@@ -22,4 +22,5 @@
 [IDLEの起動](idle.md)  
 [スクリプトの作成](script.md)  
 [変数と演算子](operator.md)  
+[リスト](list.md)  
 [Tips](tips.md)  
