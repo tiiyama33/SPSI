@@ -17,3 +17,4 @@
 
 [授業の目的](aim.md)  
 [Pythonのインストール](install.md)  
+[pygameのインストール](pygame.md)  
