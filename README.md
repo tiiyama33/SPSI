@@ -15,5 +15,5 @@
 - 12/27
 - 1/10
 
-[授業の目的](aim.md)
-[Pythonのインストール](install.md)
+[授業の目的](aim.md)  
+[Pythonのインストール](install.md)  
