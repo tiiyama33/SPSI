@@ -16,11 +16,16 @@
 - 12/27
 - 1/10
 
-[授業の目的](aim.md)  
-[Pythonのインストール](install.md)  
-[pygameのインストール](pygame.md)  
-[IDLEの起動](idle.md)  
-[スクリプトの作成](script.md)  
-[変数と演算子](operator.md)  
-[リスト](list.md)  
-[Tips](tips.md)  
+## テキスト
+
+- 準備
+  - [授業の目的](aim.md)  
+  - [Pythonのインストール](install.md)  
+  - [pygameのインストール](pygame.md)  
+- 基本操作
+  - [IDLEの起動](idle.md)  
+  - [スクリプトの作成](script.md)  
+- プログラムの基本
+  - [変数と演算子](operator.md)  
+  - [リスト](list.md)  
+- [Tips](tips.md)  
