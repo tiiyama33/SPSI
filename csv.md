@@ -18,3 +18,5 @@ with open("output.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerows(l) #書き出し
 ```
+
+[戻る](./README.md) [次へ](graphics.md)
