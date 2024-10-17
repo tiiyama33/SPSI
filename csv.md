@@ -6,14 +6,14 @@
 ```.py
 import csv # csvモジュール(標準)を読み込み
 
-with open(&#039;sample.csv&#039;) as f:
+with open("sample.csv") as f:
     reader = csv.reader(f)
     l = [row for row in reader]
     #リストのリストとしてlにcsvファイルの内容が入る
 
 print(l) 
 
-with open(&#039;output.csv&#039;, &#039;w&#039;) as f:
+with open("output.csv", "w") as f:
     writer = csv.writer(f)
-    writer.writerows(l) #書き出し</pre>
+    writer.writerows(l) #書き出し
 ```
