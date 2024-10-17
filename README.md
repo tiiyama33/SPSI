@@ -30,5 +30,6 @@
   - [リスト](list.md)
   - [制御構文](for.md)
 - プログラムの拡張
-  - [モジュール](module.md)  
+  - [モジュール](module.md)
+  - [csvファイルの扱い](csv.md)
 - [Tips](tips.md)  
