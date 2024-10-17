@@ -32,4 +32,6 @@
 - プログラムの拡張
   - [モジュール](module.md)
   - [csvファイルの扱い](csv.md)
+- グラフィクス
+  - [グラフィクスを扱う](graphics.md)  
 - [Tips](tips.md)  
