@@ -29,4 +29,6 @@
   - [変数と演算子](operator.md)  
   - [リスト](list.md)
   - [制御構文](for.md)
+- プログラムの拡張
+  - [モジュール](module.md)  
 - [Tips](tips.md)  
