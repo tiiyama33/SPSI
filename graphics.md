@@ -17,7 +17,7 @@ pygame.display.update() #画面表示を更新
 while True:
     for event in pygame.event.get():
         if event.type == QUIT: #終了処理
-            pygame.image.save(screen, &quot;test.png&quot;) #ウィンドウイメージをセーブ
+            pygame.image.save(screen, "test.png") #ウィンドウイメージをセーブ
             pygame.quit() #モジュールの終了
             sys.exit() #プログラム修了
 ```
