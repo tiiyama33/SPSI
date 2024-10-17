@@ -40,3 +40,5 @@ while True:
 <h3>多角形を描く</h3>
 <pre class="brush: python; gutter: false">pygame.draw.polygan(スクリーンオブジェクト, 座標のリスト, 幅)</pre>
 <p>座標のリスト = [(x座標, y座標), (x座標, y座標), (x座標, y座標) ...]<br />幅を0にすると塗りつぶし<br /><br /></p>
+
+[戻る](./README.md) 
