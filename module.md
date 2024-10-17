@@ -7,5 +7,5 @@ import math    # mathモジュール(標準)を読み込み
 
 print(math.sin(1.0))   # 0.8414709848078965
 
-print(math.pi)    # 3.141592653589793 </pre>
+print(math.pi)    # 3.141592653589793 
 ```
