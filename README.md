@@ -27,5 +27,6 @@
   - [スクリプトの作成](script.md)  
 - プログラムの基本
   - [変数と演算子](operator.md)  
-  - [リスト](list.md)  
+  - [リスト](list.md)
+  - [制御構文](for.md)
 - [Tips](tips.md)  
