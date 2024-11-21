@@ -47,25 +47,6 @@ def hline(m, r, width, length, color=(255,255,255)):
     #width 幅(pixel)
     #length 長さ(pixel)
     #color 色
-    centerx = screen.get_width()/2.0
-    centery = screen.get_height()/2.0 #画面の中心座標を得る
-
-    #針の方向
-    theta = math.radians(90.0-6.0*m)
-    theta2 = math.radians(180.0-6.0*m)
-
-    c1 = [centerx+r*math.cos(theta), centery-r*math.sin(theta)] #針の内側の中心座標
-    c2 = [centerx+(r+length)*math.cos(theta), centery-(r+length)*math.sin(theta)] #針の外側の中心座標
-    hw = [(width/2.0)*math.cos(theta2) , -(width/2.0)*math.sin(theta2)]
-
-    p1 = [c1[0]-hw[0], c1[1]-hw[1]] #内側の中心から幅のベクトルを引く
-    p2 = [c1[0]+hw[0], c1[1]+hw[1]] #内側の中心に幅のベクトルを足す
-    p3 = [c2[0]-hw[0], c2[1]-hw[1]] #外側の中心から幅のベクトルを引く
-    p4 = [c2[0]+hw[0], c2[1]+hw[1]] #外側の中心に幅のベクトルを足す
-
-    pygame.draw.polygon(screen, color, [p1, p2, p4, p3], 0)
-
-    pygame.draw.line(screen, color, c1, c2, width)
 
 
 def mojiban():
@@ -73,10 +54,6 @@ def mojiban():
     font1 = pygame.font.SysFont("PlemolJP", 50) #フォントを指定
     text1 = font1.render("Rolex", True, (255,255,255))
     screen.blit(text1, (350,350))
-    for a in range(0,60):
-        hline(a, 280, 5, 10) #秒の目盛りを描く
-    for b in range(0,12):
-        hline(b*5, 260, 10, 30, (255,0,0))
 ```
 
 ## メインループ
@@ -89,14 +66,9 @@ def mojiban():
     mojiban() #文字盤を描く
     dt_now = datetime.datetime.now() #現在時間の取得
     #秒針を描く
-    hline(dt_now.second, -50, 5, 250)
     #print(dt_now.second)
     #分針を描く
-    hline((dt_now.minute+dt_now.second/60.0), -20, 20, 220)
     #print(dt_now.minute)
-    hline((dt_now.hour+dt_now.minute/60.0)*5.0, -20, 30, 180)
     #時針を描く
     #print(dt_now.hour)
-    #t = t + 0.01
-    #hoshi(5,(255,0,0),(100+t,100+0.5*t),100,38) #関数を使って星を描く
 ```
