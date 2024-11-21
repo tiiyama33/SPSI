@@ -33,6 +33,9 @@
   - [モジュール](module.md)
   - [csvファイルの扱い](csv.md)
 - グラフィクス
-  - [グラフィクスを扱う](graphics.md)  
+  - [グラフィクスを扱う](graphics.md)
+- [時計を作ろう](clock.md)
+  - 関数
+  - 繰り返し処理  
 - [Tips](tips.md)
 - [Faq](faq.md)
