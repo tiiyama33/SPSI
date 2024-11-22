@@ -25,6 +25,25 @@ while True: #無限ループ
             pygame.quit() #pygameモジュールの終了
             sys.exit() #プログラムの強制終了
 ```
+## 材料
+
+### 円を描く
+```
+pygame.draw.circle(スクリーンオブジェクト, 色, 中心座標, 半径)
+```
+中心座標 = (x座標, y座標)
+
+<h3>楕円を描く</h3>
+<pre class="brush: python; gutter: false">pygame.draw.ellipse(スクリーンオブジェクト, 色, 楕円の形)</pre>
+<p>楕円の形 = (中心のx座標, 中心のy座標, 横幅, 縦幅)</p>
+<h3>線を描く</h3>
+<pre class="brush: python; gutter: false">pygame.draw.line(スクリーンオブジェクト, 色, 始点, 終点, 幅)</pre>
+<p>始点 = (x座標, y座標)<br />終点 = (x座標, y座標)</p>
+<h3>多角形を描く</h3>
+<pre class="brush: python; gutter: false">pygame.draw.polygan(スクリーンオブジェクト, 座標のリスト, 幅)</pre>
+<p>座標のリスト = [(x座標, y座標), (x座標, y座標), (x座標, y座標) ...]<br />幅を0にすると塗りつぶし<br /><br /></p>
+
+
 
 ## 関数
 繰り返し行う処理や、ひとかたまりでまとめた方がわかりやすい部分を
