@@ -43,7 +43,13 @@ pygame.draw.circle(スクリーンオブジェクト, 色, 中心座標, 半径)
 <pre class="brush: python; gutter: false">pygame.draw.polygan(スクリーンオブジェクト, 座標のリスト, 幅)</pre>
 <p>座標のリスト = [(x座標, y座標), (x座標, y座標), (x座標, y座標) ...]<br />幅を0にすると塗りつぶし<br /><br /></p>
 
+### 文字を表示する
 
+```/py
+    font1 = pygame.font.SysFont("PlemolJP", 50) #フォントを指定 数字はフォントサイズ
+    text1 = font1.render("Rolex", True, (255,255,255)) #いったんtext1に文字列を出力 
+    screen.blit(text1, (350,350)) #screenに文字列を重ねる 数値は座標
+```
 
 ## 関数
 繰り返し行う処理や、ひとかたまりでまとめた方がわかりやすい部分を
