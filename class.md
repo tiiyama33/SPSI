@@ -44,7 +44,7 @@ while True: #無限ループ main loop
 
 ```
 
-## 初期値の設定 setting initial parameter
+## 初期値の設定 setting initial parameters
 
 ```.py
 r_scale = 0.01 # m/pixel scale constant
