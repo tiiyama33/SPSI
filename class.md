@@ -58,6 +58,22 @@ gycenter = width/2.0
 
 ## 関数の設定 setting functions
 
+### 情報の表示 display informations
+```.py
+gt = 0.0
+def showtime(unit):
+    global gt
+    if unit=="s":
+        timestr = str(gt)
+        timestr = "%1.4f %s" % (gt, unit)
+    if unit=="day":
+        timestr = str(gt/86400.0)
+
+    text1 = font1.render(timestr, True, (255,255,255))
+    screen.blit(text1, (10,10))
+    gt += t_scale
+```
+
 ### 座標変換 convert positions between real-space and vertual-space
 
 ```.py
@@ -88,21 +104,6 @@ def grtor(gr):
     return(r)
 ```
 
-### 情報の表示 display informations
-```.py
-gt = 0.0
-def showtime(unit):
-    global gt
-    if unit=="s":
-        timestr = str(gt)
-        timestr = "%1.4f %s" % (gt, unit)
-    if unit=="day":
-        timestr = str(gt/86400.0)
-
-    text1 = font1.render(timestr, True, (255,255,255))
-    screen.blit(text1, (10,10))
-    gt += t_scale
-```
 
 ## クラス
 
