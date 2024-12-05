@@ -36,6 +36,8 @@
   - [グラフィクスを扱う](graphics.md)
 - [時計を作ろう](clock.md)
   - 関数
-  - 繰り返し処理  
+  - 繰り返し処理
+- [ボールのシミュレーション](class.md)
+  - クラス  
 - [Tips](tips.md)
 - [Faq](faq.md)
