@@ -144,3 +144,20 @@ ball = Ball(0)
     #pygame.draw.circle(screen, (255,255,255), ctogc((0,0)), 20)
     pygame.display.update() #画面を更新
 ```
+
+## 乱数
+```.py
+import random
+
+x = random.uniform(0,1) #0~1の乱数を生成
+```
+
+## 円周率
+```.py
+math.pi
+```
+
+## リストの内包表記
+```.py
+ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
+```
