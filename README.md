@@ -8,9 +8,9 @@
 第1回の授業までに、下の「Pythonのインストール」「pygameのインストール」を参考として、Python と pygame のインストールをしておいてください。  
 
 ## 授業予定2024
-- ~~10/18~~ [録画10/18](https://drive.google.com/file/d/1lKJveqALU4MrnN8NZLB9mZhscF6m3ed9/view?usp=sharing)
-- 11/22
-- 12/6
+- ~~10/18~~ [録画10/18](https://drive.google.com/file/d/1lKJveqALU4MrnN8NZLB9mZhscF6m3ed9/view?usp=sharing) プログラムの基礎（国旗を描こう）
+- 11/22 逐次実行型プログラム（時計を作ろう）
+- 12/6 クラス（ボールのシミュレーション）
 - 12/13
 - 12/20
 - 12/27
