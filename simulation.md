@@ -154,7 +154,7 @@ $\displaystyle a=\frac{{\rm d}v}{{\rm d}t}=\frac{f}{m}$
 $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 
 ## 地球表面での重力場
-$f = mg$
+$f = mg$  
 g = 9.80665 m s^-2
 
 
