@@ -139,11 +139,22 @@ ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
 # シミュレーション
 
 運動方程式  
+
 $\displaystyle f=ma$  
+
 から力場の中での運動をシミュレートできる。  
 上式より  
+
 $\displaystyle a = \frac{f}{m}$  
+
 a は加速度なので  
-$\displaystyle a=\frac{dv}{dt}=\frac{f}{m}$  
+
+$\displaystyle a=\frac{{\rm d}v}{{\rm d}t}=\frac{f}{m}$  
+
 $\displaystyle \Delta v = \frac{f}{m} \Delta t$
+
+## 地球表面での重力場
+$f = mg$
+g = 9.80665 m s^-2
+
 
