@@ -142,8 +142,8 @@ ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
 $\displaystyle f=ma$  
 から力場の中での運動をシミュレートできる。  
 上式より  
-$\displaystyle a = \frac{f}{m}$
-a は加速度なので
-$a=\frac{dv/dt}=\frac{f}{m}$  
+$\displaystyle a = \frac{f}{m}$  
+a は加速度なので  
+$\displaystyle a=\frac{dv}{dt}=\frac{f}{m}$  
 $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 
