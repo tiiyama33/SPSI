@@ -157,4 +157,10 @@ $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 $f = mg$  
 g = 9.80665 m s^-2
 
+## 重力相互作用
+$\displaystyle r = -G\frac{Mm}{r^2}$
+G = 6.67430 x 10^-11 m^3 kg^-1 s^-2
+
+
+
 
