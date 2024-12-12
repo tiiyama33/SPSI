@@ -110,6 +110,12 @@ while True: #無限ループ
 ```
 </details>
 
+# クラス内関数を追加する
+
+```.py
+    def set(self, v):
+    #ランダムな位置、ランダムな方向にせっと(速度はv)
+```
 
 ## 乱数
 ```.py
@@ -123,7 +129,21 @@ x = random.uniform(0,1) #0~1の乱数を生成
 math.pi
 ```
 
+# クラスのリストを作成する
+
 ## リストの内包表記
 ```.py
 ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
 ```
+
+# シミュレーション
+
+運動方程式  
+$\displaystyle f=ma$  
+から力場の中での運動をシミュレートできる。  
+上式より  
+$\displaystyle a = \frac{f}{m}$
+a は加速度なので
+$a=\frac{dv/dt}=\frac{f}{m}$  
+$\displaystyle \Delta v = \frac{f}{m} \Delta t$
+
