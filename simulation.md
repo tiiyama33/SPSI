@@ -23,7 +23,7 @@ font1 = pygame.font.SysFont("PlemolJP", 50) #フォントを指定
 width = screen.get_width()
 height = screen.get_height()
 gxcenter = width/2.0
-gycenter = width/2.0
+gycenter = height/2.0
 
 #シミュレーション座標→画面座標
 def xtogx(x):
