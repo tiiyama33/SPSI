@@ -11,7 +11,7 @@
 - ~~10/18~~ [録画10/18](https://drive.google.com/file/d/1lKJveqALU4MrnN8NZLB9mZhscF6m3ed9/view?usp=sharing) プログラムの基礎（国旗を描こう）
 - 11/22 逐次実行型プログラム（時計を作ろう）
 - 12/6 クラス（ボールのシミュレーション）
-- 12/13 クラスのリスト (複数のボール) [録画12/13]()
+- 12/13 クラスのリスト (複数のボール) [録画12/13](https://drive.google.com/file/d/1PoowG0JQ11K1zidIGUVR1tFvbO5CF96f/view?usp=sharing)
 - 12/20
 - 12/27
 - 1/10
