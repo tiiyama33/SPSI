@@ -22,12 +22,6 @@ pygame.init() #pygameモジュールの初期化
 screen = pygame.display.set_mode((800,800)) #ウィンドウの表示
 font1 = pygame.font.SysFont("PlemolJP", 50) #フォントを指定
 
-#画面変数の設定
-width = screen.get_width()
-height = screen.get_height()
-gxcenter = width/2.0
-gycenter = height/2.0
-
 #関数 シミュレーション座標→画面座標
 def xtogx(x):
     gx = x/r_scale+gxcenter
@@ -53,6 +47,12 @@ def gytoy(gy):
 def grtor(gr):
     r = r_scale*gr
     return(r)
+
+#画面変数の設定
+width = screen.get_width()
+height = screen.get_height()
+gxcenter = width/2.0
+gycenter = height/2.0
 
 #関数 経過したシミュレーション時間の表示
 gt = 0.0
