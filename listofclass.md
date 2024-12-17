@@ -13,19 +13,22 @@ import time #時間を扱うためのモジュール
 import random
 from pygame.locals import *
 
+#シミュレーション変数の設定
 r_scale = 0.01 # m/pixel
 t_scale = 0.01 # s/frame
 
+#pygameの初期化
 pygame.init() #pygameモジュールの初期化
 screen = pygame.display.set_mode((800,800)) #ウィンドウの表示
 font1 = pygame.font.SysFont("PlemolJP", 50) #フォントを指定
 
+#画面変数の設定
 width = screen.get_width()
 height = screen.get_height()
 gxcenter = width/2.0
 gycenter = height/2.0
 
-#シミュレーション座標→画面座標
+#関数 シミュレーション座標→画面座標
 def xtogx(x):
     gx = x/r_scale+gxcenter
     return(gx)
@@ -38,7 +41,7 @@ def rtogr(r):
     gr = r/r_scale
     return(gr)
 
-#画面座標→シミュレーション座標
+#関数 画面座標→シミュレーション座標
 def gxtox(gx):
     x = r_scale*(gx-gxcenter)
     return(x)
@@ -51,6 +54,7 @@ def grtor(gr):
     r = r_scale*gr
     return(r)
 
+#関数 時間の表示
 gt = 0.0
 def showtime(unit):
     global gt
@@ -80,17 +84,20 @@ class Ball:
         self.m = 0.2
         self.color = (255,255,255)
     def move(self):
+        #粒子を動かす
         self.x += self.vx*t_scale
         self.y += self.vy*t_scale
     def show(self):
+        #粒子を表示する
         pygame.draw.circle(screen, self.color, (xtogx(self.x), ytogy(self.y)), rtogr(self.r))
-
-        
+                
     #class Ball おわり
 
+#初期処理
 ball = Ball(0)
-#t = 0
-while True: #無限ループ
+
+#メインループ
+while True: 
     screen.fill((0,0,0)) #黒で塗りつぶす
 
     showtime("s")
@@ -101,8 +108,9 @@ while True: #無限ループ
 
     #time.sleep(0.5)
 
-    #プログラムの終了処理
+    #pygameのイベント処理
     for event in pygame.event.get(): #pygameからくるイベントを順に取り出す
+        #終了処理
         if event.type == QUIT: #もしイベントがQUITなら
             pygame.image.save(screen,"tokei.png") #画面をpngファイルとしてセーブ
             pygame.quit() #pygameモジュールの終了
