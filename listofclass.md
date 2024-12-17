@@ -72,7 +72,7 @@ def showtime(unit):
 #粒子のクラスの定義
 class Ball:
 
-    #初期処理
+    #インスタンス作成時の処理
     def __init__(self, id):
         #インスタンスの保持するデータ
         self.id = id
@@ -138,8 +138,35 @@ math.pi
 ```
 
 # クラスのリストを作成する
+## クラスのリストを作成する
+```.py
+ball = [Ball(0), Ball(1), Ball(2)]
+```
 
 ## リストの内包表記
 ```.py
 ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
 ```
+リストの内包表記を使えば、大量の粒子を一気に作成できる
+```.py
+#初期処理
+number = 200
+ball = [Ball(x) for x in range(0, number)]
+```
+
+#クラスのリストの繰り返し処理
+リスト化することで、for文を使った処理が可能になる
+```.py
+#初期処理
+for i in range(0,number):
+    ball[i].set(1) #速さ1m/s
+```
+```
+#メインループ
+    for i in range(0,number): #ボールの数だけ処理を繰り返す
+        ball[i].move()
+        ball[i].show()
+
+```
+
+
