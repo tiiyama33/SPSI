@@ -163,7 +163,7 @@ G = 6.67430 x 10^-11 m^3 kg^-1 s^-2
 1 au = 149597870700 m  
 1 day = 86400 s
 
-天体名|質量|軌道長半径|離心率|近点距離|遠点距離|近点距離における速度|遠点距離における速度|公転周期
+天体名<br>name|質量<br>mass|軌道長半径<br>semi-major axis|離心率<br>eccentricity|近点距離<br>pericenter|遠点距離<br>apocenter|近点距離における速度<br>speed at pericenter|遠点距離における速度<br>speed at apocenter|公転周期<br>pariod
 ---|---|---|---|---|---|---|---|---
 ||kg|au||au|au|m/s|m/s|day
 太陽<br>sun|1.9891E+30|||||||
