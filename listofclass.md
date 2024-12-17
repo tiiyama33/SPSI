@@ -54,7 +54,7 @@ def grtor(gr):
     r = r_scale*gr
     return(r)
 
-#関数 時間の表示
+#関数 経過したシミュレーション時間の表示
 gt = 0.0
 def showtime(unit):
     global gt
