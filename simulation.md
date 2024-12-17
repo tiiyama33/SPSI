@@ -134,32 +134,6 @@ while True:
 ```
 </details>
 
-# クラス内関数を追加する
-
-```.py
-    def set(self, v):
-    #ランダムな位置、ランダムな方向にせっと(速度はv)
-```
-
-## 乱数
-```.py
-import random
-
-x = random.uniform(0,1) #0~1の乱数を生成
-```
-
-## 円周率
-```.py
-math.pi
-```
-
-# クラスのリストを作成する
-
-## リストの内包表記
-```.py
-ball = [Ball(x) for x in range(0,5)] #for文を使ってリストを生成
-```
-
 # シミュレーション
 
 運動方程式  
