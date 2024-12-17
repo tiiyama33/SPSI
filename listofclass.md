@@ -71,8 +71,8 @@ def showtime(unit):
 #粒子のクラスの定義
 class Ball:
 
-    #インスタンス作成時の処理
     def __init__(self, id):
+        #インスタンス作成時の処理
         #インスタンスの保持するデータ
         self.id = id
         self.x = 0.0
