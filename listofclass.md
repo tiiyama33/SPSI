@@ -167,4 +167,5 @@ for i in range(0, number):
         ball[i].show()
 ```
 
+![image](https://github.com/user-attachments/assets/e29212e3-1fae-4c68-a56b-fc91006365ee)
 
