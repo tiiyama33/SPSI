@@ -68,7 +68,6 @@ def showtime(unit):
     screen.blit(text1, (10,10))
     gt += t_scale
     
-
 #粒子のクラスの定義
 class Ball:
 
