@@ -158,15 +158,14 @@ ball = [Ball(x) for x in range(0, number)]
 リスト化することで、for文を使った処理が可能になる
 ```.py
 #初期処理
-for i in range(0,number):
+for i in range(0, number):
     ball[i].set(1) #速さ1m/s
 ```
 ```
 #メインループ
-    for i in range(0,number): #ボールの数だけ処理を繰り返す
+    for i in range(0, number): #ボールの数だけ処理を繰り返す
         ball[i].move()
         ball[i].show()
-
 ```
 
 
