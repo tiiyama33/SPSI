@@ -186,7 +186,7 @@ $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 ## 地球表面での重力場
 $f = mg$  
 
-$g = 9.80665 \rm\ m\ s^{-2}$
+$g = \rm 9.80665 \ m \ s^{-2}$
 
 ```.py
 #クラスBall内
@@ -227,11 +227,39 @@ ymin = gytoy(height)
 
 
 ## 重力相互作用
+惑星の動きのシミュレーションをする
+
+画面の中心に太陽を置く  
+太陽は動かないものとする
+```.py
+#メインループ内
+    pygame.draw.circle(screen, (255,255,0), (xtogx(0), ytogy(0)), 10)
+```
+
+太陽からの引力は
 $\displaystyle f = -G\frac{Mm}{r^2}$  
 
-G = 6.67430 x 10^-11 m^3 kg^-1 s^-2
+力は太陽(画面の中心)に向かって働くことに注意
+
+$G = \rm 6.67430 \times 10^{-11}\ m^3\ kg^{-1}\ s^{-2}$  
 1 au = 149597870700 m  
 1 day = 86400 s
+
+画面の大きさを地球の公転半径の4倍ぐらいにする
+
+$\rm 1\ pixel = (1.5 \times 10^{11} \rm\ m)*4/(800\ pixel) = 7.5 \times 10^{8}\ m$  
+$\rm 7.5 \times 10^{8}$ m/pixel
+
+30秒ぐらいで地球が太陽の周りを1周するぐらいにする
+
+(100 frame s^-1)(30 s) = (365\*24\*60\*60 s)  
+10500 s/frame 
+
+```.py
+r_scale = 7.5*10**8
+t_scale = 5000
+```
+
 
 天体名<br>name|質量<br>mass|軌道長半径<br>semi-major axis|離心率<br>eccentricity|近点距離<br>pericenter|遠点距離<br>apocenter|近点距離における速度<br>speed at pericenter|遠点距離における速度<br>speed at apocenter|公転周期<br>pariod
 ---|---|---|---|---|---|---|---|---
