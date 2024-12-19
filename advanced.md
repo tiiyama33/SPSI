@@ -80,7 +80,8 @@ trs = pygame.Surface((800,800), flags=pygame.SRCALPHA) #軌跡の描画用の画
     def trajectory(self):
         #軌跡の表示
         for i in range(0,500): #500点分の過去のボールを描写
-            #n番目の記録についてボールを描く。描いた順に上に重なっていくので、古いものから描写する。(self.tが100だとすると、100番目から順に描く)
+            #n番目の記録についてボールを描く。描いた順に上に重なっていくので、古いものから描写する。
+            #(self.tが100だとすると、100番目から順に描く)
             n = self.t+i
             if n>=500: #499番目まで描いたら、0番からを描く
                 n -= 500
@@ -102,14 +103,6 @@ trs = pygame.Surface((800,800), flags=pygame.SRCALPHA) #軌跡の描画用の画
     screen.blit(trs,(0,0)) #screenにtrsを重ねる
     pygame.display.update() #画面を更新
 ```
-
- 
-
-
-
-
-
-
 
 ![image](https://github.com/user-attachments/assets/0beb48ce-0138-4186-aaaa-19ec982137ef)
 
