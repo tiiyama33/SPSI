@@ -64,7 +64,7 @@ screen = pygame.display.set_mode((800,800),flags=(pygame.DOUBLEBUF|pygame.RESIZA
         pygame.draw.circle(screen, self.color, (gx, gy), rtogr(self.r))
 ```
 
-軌跡の表示は 4要素による色指定 (R, G, B, 不透明度)により行うが、  
+軌跡の表示は 4要素による色指定 (R, G, B, 不透明度) により行うが、  
 pygame.display.set_mode で作成したウィンドウは不透明度を使った描画が出来ないので、  
 別に Surface と呼ばれる画像イメージを作成してそこに描画し、  
 後で screen　に重ねる。
@@ -80,9 +80,10 @@ trs = pygame.Surface((800,800), flags=pygame.SRCALPHA) #軌跡の描画用の画
     def trajectory(self):
         #軌跡の表示
         for i in range(0,500): #500点分の過去のボールを描写
-            n = self.t+i #n番目の記録についてボールを描く。描いた順に上に重なっていくので、古いものから描写する。(self.tが100だとすると、100番目から順に描く
-            if n>=500: #499番目まで書いたら、0番からを描く
-                n += -500
+            #n番目の記録についてボールを描く。描いた順に上に重なっていくので、古いものから描写する。(self.tが100だとすると、100番目から順に描く)
+            n = self.t+i
+            if n>=500: #499番目まで描いたら、0番からを描く
+                n -= 500
             cl = (self.color[0], self.color[1], self.color[2], self.tc[n]) #4つ目に不透明度を入れた色指定値
             pygame.draw.circle(trs, cl, (self.tx[n], self.ty[n]), rtogr(self.r)) #trsに過去のボールを描く
             self.tc[n] -= 0.5 #描いたら不透明度を(次のターンのために) 0.5 だけ下げる (古いものは色が薄くなる)
