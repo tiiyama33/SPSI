@@ -17,7 +17,8 @@ screen.blit(text1, (10,10)) #画像をスクリーンに重ねる
 VIDEORESIZE というイベントが発生するので、必要な処理を行う。
 
 ```.py
-screen = pygame.display.set_mode((800,800),flags=(pygame.DOUBLEBUF|pygame.RESIZABLE)) #ウィンドウを作成する際に、画面の大きさの変更可能(RESIZABLE)という属性を与える(フラグを立てる)
+screen = pygame.display.set_mode((800,800),flags=(pygame.DOUBLEBUF|pygame.RESIZABLE))
+#ウィンドウを作成する際に、画面の大きさの変更可能(RESIZABLE)という属性を与える(フラグを立てる)
 
 #メインループ内
     #pygameのイベント処理
