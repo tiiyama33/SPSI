@@ -136,11 +136,39 @@ while True:
 
 # シミュレーション
 
+メインループ内で、速度による位置の変化を反映させればよい。
+
+位置xは
+
+$\displaystyle v = \frac{{\rm d}x}{{\rm d}t}$
+
+より
+
+$\Delta x = v \Delta t$
+
+位置 $x$ に、速度 $v$ と時間の刻み幅 $\Delta t$ の積を加えればよい。
+
+2次元のシミュレーションなので、x方向、y方向について行う。
+
+```.py
+#クラスBall内
+    def move(self):
+        #粒子を動かす
+        self.x += self.vx*t_scale
+        self.y += self.vy*t_scale
+
+#メインループ内
+    for i in range(0,number): #ボールの数だけ処理を繰り返す
+        ball[i].move() #粒子を動かす
+```
+
+また、速度$v$は
+
 運動方程式  
 
 $\displaystyle f=ma$  
 
-から力場の中での運動をシミュレートできる。  
+に従い、力を受けると変化する。
 上式より  
 
 $\displaystyle a = \frac{f}{m}$  
@@ -151,10 +179,25 @@ $\displaystyle a=\frac{{\rm d}v}{{\rm d}t}=\frac{f}{m}$
 
 $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 
+速度 $v$ に、$\frac{f}{m}$ と時間の刻み幅$\Delta t$ の積を加えればよい。
+
+
 ## 地球表面での重力場
 $f = mg$  
 
-g = 9.80665 m s^-2
+$g = 9.80665 \rm m s^-2$
+
+```.py
+#クラスBall内
+    def gravity(self):
+        #地球表面での重力
+        self.vy += 9.80665*t_scale
+
+#メインループ内
+    for i in range(0,number): #ボールの数だけ処理を繰り返す
+        ball[i].gravity() #地球表面での重力
+        
+
 
 ## 重力相互作用
 $\displaystyle f = -G\frac{Mm}{r^2}$  
