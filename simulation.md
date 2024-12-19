@@ -160,9 +160,10 @@ $\Delta x = v \Delta t$
 #メインループ内
     for i in range(0,number): #ボールの数だけ処理を繰り返す
         ball[i].move() #粒子を動かす
+        ball[i].show() #粒子を表示する
 ```
 
-また、速度$v$は
+また、速度 $v$ は
 
 運動方程式  
 
@@ -179,24 +180,50 @@ $\displaystyle a=\frac{{\rm d}v}{{\rm d}t}=\frac{f}{m}$
 
 $\displaystyle \Delta v = \frac{f}{m} \Delta t$
 
-速度 $v$ に、$\frac{f}{m}$ と時間の刻み幅$\Delta t$ の積を加えればよい。
+速度 $v$ に、 $\frac{f}{m}$ と時間の刻み幅 $\Delta t$ の積を加えればよい。
 
 
 ## 地球表面での重力場
 $f = mg$  
 
-$g = 9.80665 \rm m s^-2$
+$g = 9.80665 \rm\ m\ s^{-2}$
 
 ```.py
 #クラスBall内
     def gravity(self):
         #地球表面での重力
-        self.vy += 9.80665*t_scale
+        self.vy += -9.80665*t_scale
 
 #メインループ内
     for i in range(0,number): #ボールの数だけ処理を繰り返す
         ball[i].gravity() #地球表面での重力
-        
+        ball[i].move() #粒子を動かす
+        ball[i].show() #粒子を表示する
+```        
+
+## 床との反射
+床の位置(y座標)を取得しておく
+```.py
+ymin = gytoy(height)
+```
+ボールのy座標が(床の位置-ボールの半径)より小さくなったら、反射処理をする
+
+```.py
+#クラスBall内
+    def reflect(self):
+        #床での反射
+        if((self.y<(ymin+self.r)) and (self.vy<0)): #ボールの位置が床より低く、かつ下向きに進んでいる場合
+            self.vy *= -1 #進む向きを反転させる 1ではなく0.8等にすると非弾性衝突になる
+            self.y = 2*(ymin+self.r)-self.y #床にめり込んでいる距離だけ床から離す
+
+#メインループ内
+    for i in range(0,number): #ボールの数だけ処理を繰り返す
+        ball[i].gravity() #地球表面での重力
+        ball[i].reflect() #床での反射
+        ball[i].move() #粒子を動かす
+        ball[i].show() #粒子を表示する
+
+```        
 
 
 ## 重力相互作用
